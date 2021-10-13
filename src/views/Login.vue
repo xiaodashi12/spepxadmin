@@ -7,7 +7,7 @@
                 v-on:keyup.enter="handleLogin">
             <div style="margin-left: 0rem">
                 <!-- <div class="login-en-text">BDI-IoT</div> -->
-                <div class="login-cn-text">DubGo Pixiu</div>
+                <div class="login-cn-text">DubbGo Pixiu</div>
                 <div class="login-text">欢迎您 ! 请{{isLogin? "登入" : "注册"}}您的账号</div>
             </div>
             <div v-if="isLogin">
