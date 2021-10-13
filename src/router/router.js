@@ -39,6 +39,10 @@ export default new Router({
           path: 'RateLimiter',
           component: () => import('@/views/dashboard/manage/RateLimiter.vue')
         },
+        {
+          path: 'personInfo',
+          component: () => import('@/views/dashboard/personInfo/index.vue')
+        },
       ],
     },
   ]

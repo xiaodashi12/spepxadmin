@@ -1,5 +1,5 @@
 
-import store from '@/store'
+import store from '@/store/store.js'
 
 const defaultVars = {
     store:store,

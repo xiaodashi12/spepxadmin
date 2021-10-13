@@ -372,7 +372,7 @@
     background: white;
     }
     .login-container {
-        @include relative;
+        // @include relative;
         margin: 0;
         overflow: hidden;
         background: linear-gradient(to bottom, #19778c, #095f88);
@@ -393,7 +393,7 @@
         }
 
         .card-box {
-            @include fxied-center;
+            // @include fxied-center;
             text-align: center;
             width: 60%;
             transform: translate(-50%, -57%);
@@ -432,7 +432,7 @@
                 }
 
                 p {
-                    @include f_left;
+                    // @include f_left;
                     white-space: normal;
                     word-wrap: break-word;
                     padding: 0;

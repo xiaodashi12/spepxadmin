@@ -67,5 +67,9 @@ const config = {
         url: '/user/getInfo',
         method: ''
     },
+    'getPasswordEdit':{
+        url: '/user/password/edit',
+        method: ''
+    },
 }
 export default config;

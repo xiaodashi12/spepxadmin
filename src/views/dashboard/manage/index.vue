@@ -17,9 +17,9 @@
                     <!-- <el-dropdown-item divided @click.native="handleOnOpen">
                         <span>发行系统</span>
                     </el-dropdown-item> -->
-                    <!-- <el-dropdown-item divided @click.native="handlePersonInfo">
+                    <el-dropdown-item divided @click.native="handlePersonInfo">
                         <span>个人中心</span>
-                    </el-dropdown-item> -->
+                    </el-dropdown-item>
                     <el-dropdown-item divided @click.native="handleOnLogOut">
                         <span>退出登录</span>
                     </el-dropdown-item>
@@ -42,27 +42,30 @@
 <script>
 import CustomMenu from '@/components/CustomMenu.vue'
 import { getLocationSearchObj } from '@/utils/common.js'
+import { getToken, setToken, removeToken, getLocalStorage, setLocalStorage,clearLocalStorage } from '@/utils/auth'
 import {mapGetters, mapActions} from 'vuex'
 export default {
   name: 'Manage',
   data() {
     return {
-      fromType: true
+      fromType: true,
+      operatorInfo:{}
     }
   },
   components: {
     CustomMenu
   },
   computed: {
-      ...mapGetters([
-          'operatorInfo'
-      ])
+      // ...mapGetters([
+      //     'operatorInfo'
+      // ])
   },
   methods: {
     ...mapActions([
         'FedLogOut',
     ]),
     init() {
+      this.operatorInfo = getLocalStorage('operatorInfo')
       let params = getLocationSearchObj()
       this.fromType = params.from == 1 ? false : true // 判断是否隐藏左侧菜单 true是不隐藏 false的隐藏
     },

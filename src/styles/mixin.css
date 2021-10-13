@@ -1,4 +1,4 @@
-
+/* 
 $main-color: #3C4150;
 $second-color: #01C1B2;
 $three-color:#4494F9;
@@ -23,21 +23,21 @@ $rd:#fe0303;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-}
-
+} */
+/* 
 @mixin relative {
     position: relative;
     width: 100%;
     height: 100%;
-}
+} */
 
-//左右浮动
+/* //左右浮动
 @mixin f_left(){
     float: left;
 }
 @mixin f_right(){
     float: right;
-}
+} */
 .my_form_label .el-form-item__label{
     font-size: .35rem !important;
 }

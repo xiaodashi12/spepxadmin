@@ -75,7 +75,7 @@ service.interceptors.response.use(response => {
             return Promise.reject(
                 {
                     code: res.code,
-                    message: res.msg
+                    message: res.message
                 }
             );
         }
