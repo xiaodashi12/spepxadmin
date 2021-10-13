@@ -1,6 +1,6 @@
 /* eslint-disable*/
 import axios from 'axios';
-import { getToken, setLocalStorage, getLocalStorage, getSessionStorage } from '@/utils/utils';
+import { getToken, setLocalStorage, getLocalStorage, getSessionStorage } from '@/utils/auth';
 import store from '../store/store';
 import * as dlgUtils from './dialogUtils';
 // 创建axios实例
