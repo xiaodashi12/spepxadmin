@@ -53,7 +53,7 @@
             <div v-else>
                 <el-form :model="registerParam" :rules="rules" ref="registerForm" label-width="0px" class="ms-content login-form">
                     <el-form-item prop="username">
-                        <el-input v-model="registerParam.username"  autocomplete="new-password" placeholder="用户名" prefix-icon="el-icon-user">
+                        <el-input v-model="registerParam.username" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" autocomplete="new-password" placeholder="用户名" prefix-icon="el-icon-user">
                         </el-input>
                     </el-form-item>
                     <el-form-item prop="password">

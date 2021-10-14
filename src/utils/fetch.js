@@ -20,8 +20,9 @@ const service = axios.create({
 // request拦截器
 service.interceptors.request.use(config => {
     console.log(store.getters)
-    if (store.getters.token) {
-        config.headers.token = getToken();
+    let tk = getLocalStorage('operatorInfo').token
+    if (tk && tk != '') {
+        config.headers.token = tk;
         config.headers.username = getLocalStorage('operatorInfo').username;
     }
 
