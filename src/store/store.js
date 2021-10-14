@@ -135,8 +135,8 @@ export default new Vuex.Store({
           commit('SET_APPOINTINFO',{})
 
           removeToken();
-          clearLocalStorage('roles');
-
+          clearLocalStorage('operatorInfo');
+          clearLocalStorage('expireTime');
           resolve()
         }).catch(error => {
           reject(error)
@@ -153,8 +153,8 @@ export default new Vuex.Store({
         commit('SET_APPOINTINFO',{})
 
         removeToken();
-        // clearLocalStorage('operatorInfo');
-
+        clearLocalStorage('operatorInfo');
+        clearLocalStorage('expireTime');
 
         resolve()
       })

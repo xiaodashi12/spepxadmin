@@ -114,8 +114,8 @@
             return {
                 isLogin:true,
                 ruleForm: {
-                    username: "test",
-                    password: "123456",
+                    username: "",
+                    password: "",
                     checked: true
                 },
                 registerParam:{
